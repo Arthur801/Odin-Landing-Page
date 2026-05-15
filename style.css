@@ -13,7 +13,7 @@ body {
     height: 48px;
     display: flex;
     justify-content: space-between;
-    padding: 0 200px;
+    padding: 0px 200px;
     flex: none;
 }
 
@@ -83,8 +83,9 @@ a:visited {
 
 .signup-button {
     background-color: #3882F6;
-    border-radius: 12%;
-    border: 0;
+    color: white;
+    border: 1 white;
+    border-radius: 6px;
     padding: 5px 20px;
 }
 
@@ -109,7 +110,6 @@ a:visited {
     flex-wrap: nowrap;
     flex: none;
     gap: 50px;
-
 }
 
 .info-title {
@@ -141,15 +141,73 @@ a:visited {
     width: 180px;
 }
 
-.quote {}
+.quote {
+    box-sizing: border-box;
+    background-color: #E5E7EB;
+    height: 500px;
+    color: #1F2937;
+    font-size: 36px;
+    padding: 0 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex: none;
+}
 
-.signup {}
+.quote-text {
+    font-weight: lighter;
+    width: 800px;
+}
+
+.quote-author {
+    display: block;
+    font-weight: bold;
+    font-size: 18px;
+    width: 60%;
+    text-align: right;
+}
+
+.signup {
+    box-sizing: border-box;
+    height: 500px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.signup-box {
+    width: 900px;
+    background-color: #3882F6;
+    border-radius: 6px;
+    color: white;
+    padding: 40px 100px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.signup-bold-text {
+    font-weight: bold;
+}
+
+.signup-thin-text {
+    font-size: 14px;
+}
+
+.signup .signup-button {
+    border: 1px solid white;
+}
 
 .footer {
     background-color: #1F2937;
     text-align: center;
     color: white;
-    padding: 1px;
+    padding: 12px;
     flex: none;
 }
 
