@@ -1,26 +1,36 @@
 body {
     font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0;
+    min-height: 100vh;
+    min-width: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .header {
     background-color: #1F2937;
     height: 48px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 0 200px;
+    flex: none;
 }
 
 .header-logo {
     color: white;
-    font-size: larger;
+    font-size: 24px;
+    flex: none;
 }
 
 .header-links {
     list-style-type: none;
-    font-size: medium;
-    color: white;
+    font-size: 18px;
+    color: #E5E7EB;
     display: flex;
     gap: 10px;
+    flex: none;
+    flex-wrap: nowrap;
 }
 
 a {
@@ -31,9 +41,58 @@ a:visited {
     color: inherit;
 }
 
-.main-content {}
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    flex: auto;
+}
 
-.intro{}
+.intro{
+    background-color: #1F2937;
+    font-size: 18px;
+    color: #E5E7EB;
+    padding: 50px 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    flex-wrap: nowrap;
+    flex: 0 0 auto;
+}
+
+.intro-texts {
+    width: 360px;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    flex-wrap: nowrap;
+    flex: none;
+    justify-content: start;
+}
+
+.intro-title {
+    font-size: 48px;
+    color: #F9FAF8;
+    font-weight: 900;
+    margin: 0;
+}
+
+
+.signup-button {
+    background-color: #3882F6;
+    border-radius: 12%;
+    border: 0;
+    padding: 5px 20px;
+}
+
+.intro-image {
+    background-color: gray;
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    padding: 130px 120px;
+    text-align: center;
+}
 
 .info {}
 
@@ -41,5 +100,12 @@ a:visited {
 
 .signup {}
 
-.footer {}
+.footer {
+    background-color: #1F2937;
+    text-align: center;
+    color: white;
+    padding: 1px;
+    flex: none;
+}
+
 
