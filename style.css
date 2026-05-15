@@ -49,10 +49,12 @@ a:visited {
 }
 
 .intro{
+    box-sizing: border-box;
     background-color: #1F2937;
     font-size: 18px;
     color: #E5E7EB;
-    padding: 50px 200px;
+    height: 500px;
+    padding: 100px 200px;
     display: flex;
     justify-content: space-between;
     align-items: end;
@@ -94,7 +96,50 @@ a:visited {
     text-align: center;
 }
 
-.info {}
+.info {
+    box-sizing: border-box;
+    background-color: white;
+    height: 500px;
+    font-size: 18px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex: none;
+    gap: 50px;
+
+}
+
+.info-title {
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 900;
+    display: flex;
+    flex-wrap: nowrap;
+    flex: none;
+}
+
+.info-images-texts {
+    padding: 0 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex: none;
+}
+
+.info-image {
+    padding: 80px;
+    border: 5px solid #3882F6;
+    border-radius: 10%;
+}
+
+.info-text {
+    width: 180px;
+}
 
 .quote {}
 
